@@ -20,7 +20,7 @@
 
 
         <ul>
-            <li><a href="#inicio" class="ativo">Inicio</a></li>
+            <li><a href="#inicio" id="inicio" class="ativo">Inicio</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#techs">Tecnologias</a></li>
             <li><a href="#projetos">Projetos</a></li>
@@ -30,19 +30,26 @@
     </header>
 
     <main>
-        <section id="inicio" class="informacoes">
-            <h1>Caio Ramineli</h1>
-            <h3>Desenvolvedor Web</h3>
-            <a href="#"><button type="button">Baixar CV</button></a>
-            <a href="#"><button type="button">Contato</button></a>
-            <section class="contatos">
-                <a href="https://www.linkedin.com/in/caioramineli/" target="_blank"><img src="src/linkedin.png" alt="linkedin"></a>
-                <a href="https://github.com/caioramineli" target="_blank"><img src="src/github.png" alt="GitHub"></a>
-                <a href="#" target="_blank"><img src="src/whatsapp.png" alt="Whatsapp"></a>
+        <section class="container-inicio">
+            <section  class="informacoes">
+                <h1>Caio Ramineli</h1>
+                <h3>Desenvolvedor Web <span id="fullstack"></span> </h3>
+                <p>Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo.</p>
+                <section class="btns">
+                    <a href="#"><button type="button">Baixar CV</button></a>
+                    <a href="#"><button type="button" id="ultimo">Contato</button></a>
+                </section>
+                <section class="contatos">
+                    <a href="https://www.linkedin.com/in/caioramineli/" target="_blank"><img src="src/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/caioramineli" target="_blank"><img src="src/github.png" alt="GitHub"></a>
+                    <a href="#" target="_blank"><img src="src/whatsapp.png" alt="Whatsapp"></a>
+                </section>
             </section>
-            
+            <section class="foto">
+                <img src="src/foto-minha.jpg" alt="">
+            </section>
         </section>
-
+        
     </main>
 
 </body>
