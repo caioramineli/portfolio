@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caio Ramineli | Portfólio</title>
-    <script src="assets/index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="assets/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
+    <script src="assets/index.js" defer></script>
+    <title>Caio Ramineli | Portfólio</title>
 
+</head>
 <body>
     <header>
         <section class="mode-name">
@@ -36,7 +36,7 @@
                 <h3>Desenvolvedor Web <span id="fullstack"></span> </h3>
                 <p>Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo.</p>
                 <section class="btns">
-                    <a href="#"><button type="button">Baixar CV</button></a>
+                    <a href="./CV.pdf" target="_blank" download="Curriculo_CaioRamineli"><button type="button" id="btn-download">Baixar CV</button></a>
                     <a href="#"><button type="button" id="ultimo">Contato</button></a>
                 </section>
                 <section class="contatos">
@@ -46,12 +46,124 @@
                 </section>
             </section>
             <section class="foto">
-                <img src="src/foto-minha.jpg" alt="">
+                <img src="src/foto-minha.jpg" alt="minha-foto">
             </section>
         </section>
         
-    </main>
+        <section id="sobre" class="container-sobre">
+            <h1>Sobre Mim</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </section>
 
+        <section id="techs" class="container-tecnologias">
+            <h1>Tecnologias</h1>
+            <section class="tecnologias">   
+                <div class="box">
+                    <img src="src/js.png">
+                    <span id="descricao-tech">JavaScript</span>
+                </div>
+                <div class="box">
+                    <img src="src/csharp.png">
+                    <span id="descricao-tech">CSharp</span>
+                </div>
+
+                <div class="box">
+                    <img src="src/php.png">
+                    <span id="descricao-tech">PHP</span>
+                </div>
+
+                <div class="box">
+                    <img src="src/html-5.png">
+                    <span id="descricao-tech">HTML 5</span>
+                </div>
+                
+                <div class="box">
+                    <img src="src/css-3.png">
+                    <span id="descricao-tech">CSS 3</span>
+                </div>
+
+                <div class="box">
+                    <img src="src/bootstrap.png">
+                    <span id="descricao-tech">Bootstrap</span>
+                </div>
+
+                <div class="box">
+                    <img src="src/mysql.png">
+                    <span id="descricao-tech">MySQL</span>
+                </div>
+
+                <div class="box">
+                    <img src="src/git.png">
+                    <span id="descricao-tech">Git</span>
+                </div>
+
+                <div class="box">
+                    <img src="src/github.png">
+                    <span id="descricao-tech">GitHub</span>
+                </div>
+
+                <div class="box">
+                    <img src="src/python.png">
+                    <span id="descricao-tech">Python</span>
+                </div>
+            </section>
+        </section>
+
+        <section id="projetos" class="sessao-projetos">
+            <h1>Projetos</h1>
+            <div class="container-projetos">
+                <div class="projeto">
+                    <img src="src/sca-login.png" id="img-projeto">
+                    <div class="tecnologias-projeto">
+                        <img src="src/php.png">
+                        <img src="src/mysql.png">
+                        <img src="src/js.png">
+                        <img src="src/html-5.png">
+                        <img src="src/css-3.png">
+                    </div>
+                    <h3>Sistema Conveniência Araújo</h3>
+                    <p>Sistema para uma conveniência, seguindo como base a ERS (Especificação de Requisitos de Software).</p>
+                    <div class="btns-projeto">
+                        <a href="#" target="_blank"><button type="button">Ver Projeto</button></a>
+                        <a href="#" target="_blank"><button type="button">Ver Código</button></a>
+                    </div>
+                </div>
+
+                <div class="projeto">
+                    <img src="src/twitch.png" id="img-projeto">
+                    <div class="tecnologias-projeto">
+                        <img src="src/php.png">
+                        <img src="src/mysql.png">
+                        <img src="src/js.png">
+                        <img src="src/html-5.png">
+                        <img src="src/css-3.png">
+                    </div>
+                    <h3>Clone da Twitch</h3>
+                    <p>Projeto acadêmico para praticar o conhecimento adquirido sobre Programação WEB e Banco de dados MySql.</p>
+                    <div class="btns-projeto">
+                        <a href="#" target="_blank"><button type="button">Ver Projeto</button></a>
+                        <a href="#" target="_blank"><button type="button">Ver Código</button></a>
+                    </div>
+                </div>
+
+                <div class="projeto">
+                    <img src="src/shopee.png" id="img-projeto">
+                    <div class="tecnologias-projeto">
+                        <img src="src/js.png">
+                        <img src="src/html-5.png">
+                        <img src="src/css-3.png">
+                        <img src="src/bootstrap.png">
+                    </div>
+                    <h3>Xhopii</h3>
+                    <p>Projeto acadêmico, focado em utilizar os conceitos sobre programação WEB. Não é um clone da shopee!</p>
+                    <div class="btns-projeto">
+                        <a href="#" target="_blank"><button type="button">Ver Projeto</button></a>
+                        <a href="#" target="_blank"><button type="button">Ver Código</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
