@@ -24,12 +24,31 @@ header {
     height: 5rem;
     margin: 0 auto;
     max-width: 980px;
+    /* background-color: aqua; */
 }
 
-header .mode-name a {
+header .mode-cr {
+    display: flex;
+}
+
+header .mode-cr a {
     color: white;
     font-size: 2.5rem;
     font-weight: 600;
+}
+
+header .mode-cr img:first-child{
+    width: 60px;
+    position: relative;
+    left: -10px;
+}
+
+header .mode-cr img:last-child {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    right: 28px;
+    top: 3px;
 }
 
 header a span {
@@ -55,6 +74,7 @@ header ul li a:hover {
 header ul li a.ativo {
     color: var(--cor-primaria);
 }
+
 main {
     width: 70%;
     margin: 0 auto;
@@ -64,7 +84,7 @@ main {
 main .container-inicio {
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 12vh;
     /* background-color: gray; */
 }
 
@@ -83,8 +103,13 @@ main .container-inicio .informacoes h3 {
 
 main .container-inicio .informacoes p {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 10px;
+}
+
+main .container-inicio .informacoes p span {
+    color: #3493ec;
+    font-weight: 500;
 }
 
 main .container-inicio .informacoes .btns {
@@ -137,13 +162,24 @@ main .container-inicio  .informacoes button:hover {
 
 main .container-sobre {
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 12vh;
     color: white;
+}
+
+main .container-sobre h1 {
+    font-size: 2rem;
+}
+
+main .container-sobre p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: justify;
+    line-height: 1.3;
 }
 
 main .container-tecnologias {
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 12vh;
 }
 
 main .container-tecnologias h1 {
@@ -156,7 +192,7 @@ main .tecnologias {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     column-gap: 1.2rem;
     row-gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
 }
 
 main .container-tecnologias img {
@@ -195,7 +231,7 @@ main .tecnologias .box:hover {
 }
 
 main .sessao-projetos {
-    margin-top: 5rem;
+    margin-top: 12vh;
     margin-bottom: 3rem;
     color: white;
 }
@@ -250,11 +286,11 @@ main .projeto h3 {
 
 main .projeto p {
     margin-top: 10px;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; */
 }
 
 main .projeto .btns-projeto {
