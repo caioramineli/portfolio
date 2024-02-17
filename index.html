@@ -40,21 +40,29 @@
                 <section class="btns">
                     <a href="./CV.pdf" target="_blank" download="Curriculo_CaioRamineli"><button type="button" id="btn-download">Baixar CV</button></a>
                     <button type="button" id="btn-modal" onclick="abrirModal()">Contato</button>
-
-                    <section class="container-modal" id="modal">
-                        <form id="form" method="POST" action="../processamento/processamento.php">
-                            <img src="src/close.png" onclick="fecharModal()" id="fechar-modal">
-
-                            <label for="nome">Nome</label>
-                            <input type="text" name="nome">
-        
-                            <button name="btn-enviar" type="button" onclick="Pagar()">Pagar</button>
-                            <button type="reset" onclick="fecharModal()">Cancelar</button>
-                
-                        </form>
-                    </section>
-
                 </section>
+
+                <section class="container-modal" id="modal">
+                    <form id="form" action="https://formspree.io/f/xqkrqyrw" method="POST">
+                        <img src="src/close.png" onclick="fecharModal()" id="fechar-modal">
+                        <h2>Contato</h2>
+                        <label for="nome">Nome</label>
+                        <input class="input" type="text" required name="nome" placeholder="Digite seu nome" onfocus="tirarSpanForm()">
+
+                        <label for="email">Email</label>
+                        <input class="input" type="email" required name="email" placeholder="Digite seu e-mail" onfocus="tirarSpanForm()">
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="input" required name="mensagem" rows="4" placeholder="Digite sua mensagem" onfocus="tirarSpanForm()"></textarea>
+    
+                        <div class="btns-modal">
+                            <button type="submit">Enviar</button>
+                            <button type="reset" onclick="fecharModal()">Cancelar</button>
+                        </div>
+                        <span id="span-form">Fomulario enviado!</span>
+                    </form>
+                </section>
+                
                 <section class="contatos">
                     <a href="https://www.linkedin.com/in/caioramineli/" target="_blank"><img src="src/linkedin.png" alt="linkedin"></a>
                     <a href="https://github.com/caioramineli" target="_blank"><img src="src/github.png" alt="GitHub"></a>
