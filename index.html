@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
@@ -12,17 +13,18 @@
     <title>Caio Ramineli | Portfólio</title>
 
 </head>
+
 <body>
-    <header id="inicio">
-        <section class="mode-cr">
+    <header id="topo" class="section">
+        <section class="mode-cr ">
             <a href="index.html">
                 <img src="src/c-blue.png">
                 <img src="src/r-blue.png">
             </a>
         </section>
 
-        <ul>
-            <li><a href="#inicio" class="ativo">Inicio</a></li>
+        <ul id="inicio" class="section">
+            <li><a href="#topo" class="ativo">Inicio</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#techs">Tecnologias</a></li>
             <li><a href="#projetos">Projetos</a></li>
@@ -32,13 +34,15 @@
     </header>
 
     <main>
-        <section class="container-inicio">
-            <section  class="informacoes">
+        <section id="inicio" class="container-inicio">
+            <section class="informacoes">
                 <h1>Caio Ramineli</h1>
                 <h3>Desenvolvedor Web <span id="fullstack"></span> </h3>
-                <p>Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo, estou estudando no momento <span>.NET</span> e <span>JavaScript.</span></p>
+                <p>Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo, atualmente estou estudando
+                    <span>.NET</span> e <span>JavaScript.</span></p>
                 <section class="btns">
-                    <a href="./CV.pdf" target="_blank" download="Curriculo_CaioRamineli"><button type="button" id="btn-download">Baixar CV</button></a>
+                    <a href="./CV.pdf" target="_blank" download="Curriculo_CaioRamineli"><button type="button"
+                            id="btn-download">Baixar CV</button></a>
                     <button type="button" id="btn-modal" onclick="abrirModal()">Contato</button>
                 </section>
 
@@ -47,14 +51,17 @@
                         <img src="src/close.png" onclick="fecharModal()" id="fechar-modal">
                         <h2>Contato</h2>
                         <label for="nome">Nome</label>
-                        <input class="input" type="text" required name="nome" placeholder="Digite seu nome" onfocus="tirarSpanForm()">
+                        <input class="input" type="text" required name="nome" placeholder="Digite seu nome"
+                            onfocus="tirarSpanForm()">
 
                         <label for="email">Email</label>
-                        <input class="input" type="email" required name="email" placeholder="Digite seu e-mail" onfocus="tirarSpanForm()">
+                        <input class="input" type="email" required name="email" placeholder="Digite seu e-mail"
+                            onfocus="tirarSpanForm()">
 
                         <label for="mensagem">Mensagem</label>
-                        <textarea class="input" required name="mensagem" rows="4" placeholder="Digite sua mensagem" onfocus="tirarSpanForm()"></textarea>
-    
+                        <textarea class="input" required name="mensagem" rows="4" placeholder="Digite sua mensagem"
+                            onfocus="tirarSpanForm()"></textarea>
+
                         <div class="btns-modal">
                             <button type="submit">Enviar</button>
                             <button type="reset" onclick="fecharModal()">Cancelar</button>
@@ -62,7 +69,7 @@
                         <span id="span-form">Fomulario enviado!</span>
                     </form>
                 </section>
-                
+
                 <section class="contatos">
                     <a href="https://www.linkedin.com/in/caioramineli/" target="_blank"><img src="src/linkedin.png" alt="linkedin"></a>
                     <a href="https://github.com/caioramineli" target="_blank"><img src="src/github.png" alt="GitHub"></a>
@@ -73,15 +80,19 @@
                 <img src="src/foto-minha.jpg" alt="minha-foto">
             </section>
         </section>
-        
-        <section id="sobre" class="container-sobre">
+
+        <section id="sobre" class="container-sobre section">
             <h1>Sobre Mim</h1>
-            <p>Meu nome é Caio Ramineli, tenho 22 anos e sou de Anhumas-SP. Comecei a estudar programação em 2022 quando entrei na FATEC de Presidente Prudente para cursar Análise e Desenvolvimento de Sistemas. E partir disso venho sempre buscando aprender sobre novas tecnologias e me atualizar no mercado de trabalho. Atualmente estou focado na área de Desenvolvimento Web Full-Stack, tenho mais experiência com HTML, CSS, JavaScript, PHP e C#. No momento estudando .NET, Arquitetura MVC e JavaScript.</p>
+            <p>Meu nome é Caio Ramineli, tenho 22 anos e sou de Anhumas-SP. Comecei a estudar programação em 2022 quando
+                entrei na FATEC de Presidente Prudente para cursar Análise e Desenvolvimento de Sistemas. E partir disso
+                venho sempre buscando aprender sobre novas tecnologias e me atualizar no mercado de trabalho. Atualmente
+                estou focado na área de Desenvolvimento Web Full-Stack, tenho mais experiência com HTML, CSS,
+                JavaScript, PHP e C#. No momento estou estudando .NET, Arquitetura MVC e JavaScript.</p>
         </section>
 
-        <section id="techs" class="container-tecnologias">
+        <section id="techs" class="container-tecnologias section">
             <h1>Tecnologias</h1>
-            <section class="tecnologias">   
+            <section class="tecnologias">
                 <div class="box">
                     <img src="src/js.png">
                     <span id="descricao-tech">JavaScript</span>
@@ -106,7 +117,7 @@
                     <img src="src/html-5.png">
                     <span id="descricao-tech">HTML 5</span>
                 </div>
-                
+
                 <div class="box">
                     <img src="src/css-3.png">
                     <span id="descricao-tech">CSS 3</span>
@@ -139,7 +150,7 @@
             </section>
         </section>
 
-        <section id="projetos" class="sessao-projetos">
+        <section id="projetos" class="sessao-projetos section">
             <h1>Projetos</h1>
             <div class="container-projetos">
                 <div class="projeto">
@@ -152,10 +163,11 @@
                         <img src="src/css-3.png">
                     </div>
                     <h3>Sistema Conveniência Araújo</h3>
-                    <p>Sistema para uma conveniência, seguindo como base a ERS (Especificação de Requisitos de Software).</p>
+                    <p>Sistema para uma conveniência, seguindo como base a ERS (Especificação de Requisitos de
+                        Software).</p>
                     <div class="btns-projeto">
                         <a href="#" target="_blank"><button type="button">Projeto <img src="src/olho.png"></button></a>
-                        <a href="#" target="_blank"><button type="button">Código <img src="src/github.png" id="img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button" id="btn-codigo">Código <img src="src/github.png" id="img-git"></button></a>
                     </div>
                 </div>
 
@@ -169,10 +181,11 @@
                         <img src="src/css-3.png">
                     </div>
                     <h3>Clone da Twitch</h3>
-                    <p>Projeto acadêmico para praticar o conhecimento adquirido sobre Programação WEB e Banco de dados MySql.</p>
+                    <p>Projeto acadêmico para praticar o conhecimento adquirido sobre Programação WEB e Banco de dados
+                        MySql.</p>
                     <div class="btns-projeto">
                         <a href="#" target="_blank"><button type="button">Projeto <img src="src/olho.png"></button></a>
-                        <a href="#" target="_blank"><button type="button">Código <img src="src/github.png" id="img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button" id="btn-codigo">Código <img src="src/github.png" id="img-git"></button></a>
                     </div>
                 </div>
 
@@ -185,14 +198,22 @@
                         <img src="src/bootstrap.png">
                     </div>
                     <h3>Xhopii</h3>
-                    <p>Projeto acadêmico, focado em utilizar os conceitos absorvidos sobre programação WEB. Não é um clone da shopee!</p>
+                    <p>Projeto acadêmico, focado em utilizar os conceitos absorvidos sobre programação WEB. Não é um
+                        clone da shopee!</p>
                     <div class="btns-projeto">
                         <a href="#" target="_blank"><button type="button">Projeto <img src="src/olho.png"></button></a>
-                        <a href="#" target="_blank"><button type="button">Código <img src="src/github.png" id="img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button" id="btn-codigo">Código <img src="src/github.png" id="img-git"></button></a>
                     </div>
                 </div>
             </div>
         </section>
+        <div id="btn-scroll-inicio">
+            <a href="#inicio">
+                <div class="inicio" id="back-to-top">
+                    <img src="src/topo.png">
+                </div>
+            </a>
+        </div>
     </main>
     <footer>
         <section class="container-rodape">

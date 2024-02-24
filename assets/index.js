@@ -79,3 +79,29 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit)
+
+
+const scrollBtn = document.getElementById('btn-scroll-inicio')
+window.addEventListener('scroll', function () {
+    let sections = document.querySelectorAll('.section');
+    let currentSection = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (this.scrollY >= (sectionTop - sectionHeight / 2)) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    if (currentSection != 'topo') {
+        scrollBtn.classList.add('show-button');
+    } else {
+        scrollBtn.classList.remove('show-button');
+    }
+});
+scrollBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
