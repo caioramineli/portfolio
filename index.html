@@ -5,10 +5,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/index.css">
+    <link id="estiloCSS" rel="stylesheet" type="text/css" href="assets/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     <script src="assets/index.js" defer></script>
     <title>Caio Ramineli | Portfólio</title>
 
@@ -21,13 +22,21 @@
                 <img src="src/c-blue.png">
                 <img src="src/r-blue.png">
             </a>
+            <div>
+                <input type="checkbox" class="checkbox-mode" id="mode">
+                <label class="label-mode" for="mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="bola"></div>
+                </label>
+            </div>
         </section>
 
         <ul id="inicio" class="section">
             <li><a href="#topo" class="ativo">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#techs">Tecnologias</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#sobre" class="mode-trocar">Sobre</a></li>
+            <li><a href="#techs" class="mode-trocar">Tecnologias</a></li>
+            <li><a href="#projetos" class="mode-trocar">Projetos</a></li>
             <!-- <li><a href="#contato">Contato</a></li> -->
         </ul>
 
@@ -36,9 +45,9 @@
     <main>
         <section id="inicio" class="container-inicio">
             <section class="informacoes">
-                <h1>Caio Ramineli</h1>
+                <h1 class="mode-trocar">Caio Ramineli</h1>
                 <h3>Desenvolvedor Web <span id="fullstack"></span> </h3>
-                <p>Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo, atualmente estou estudando
+                <p class="mode-trocar">Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo, atualmente estou estudando
                     <span>.NET</span> e <span>JavaScript.</span></p>
                 <section class="btns">
                     <a href="./CV.pdf" target="_blank" download="Curriculo_CaioRamineli"><button type="button"
@@ -81,7 +90,7 @@
             </section>
         </section>
 
-        <section id="sobre" class="container-sobre section">
+        <section id="sobre" class="container-sobre section mode-trocar">
             <h1>Sobre Mim</h1>
             <p>Meu nome é Caio Ramineli, tenho 22 anos e sou de Anhumas-SP. Comecei a estudar programação em 2022 quando
                 entrei na FATEC de Presidente Prudente para cursar Análise e Desenvolvimento de Sistemas. E partir disso
@@ -90,7 +99,7 @@
                 JavaScript, PHP e C#. No momento estou estudando .NET, Arquitetura MVC e JavaScript.</p>
         </section>
 
-        <section id="techs" class="container-tecnologias section">
+        <section id="techs" class="container-tecnologias section mode-trocar">
             <h1>Tecnologias</h1>
             <section class="tecnologias">
                 <div class="box">
@@ -150,7 +159,7 @@
             </section>
         </section>
 
-        <section id="projetos" class="sessao-projetos section">
+        <section id="projetos" class="sessao-projetos section mode-trocar">
             <h1>Projetos</h1>
             <div class="container-projetos">
                 <div class="projeto">
@@ -218,7 +227,7 @@
     <footer>
         <section class="container-rodape">
             <h2>Obrigado por visitar meu portfólio. Espero que tenha gostado!</h2>
-            <h3>Copyright © 2024 Caio Ramineli</h3>
+            <h3 class="mode-trocar">Copyright © 2024 Caio Ramineli</h3>
         </section>
     </footer>
 </body>

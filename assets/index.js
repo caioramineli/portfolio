@@ -59,9 +59,15 @@ async function handleSubmit(event) {
         method: form.method,
         body: data,
         headers: {
-            'Accept': 'application/json'
+            'Accept': 'application/json'            
         }
     }).then(response => {
+        form.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                form.submit();
+            }
+        })
         if (response.ok) {
             status.style.display = "inline";
             form.reset()
@@ -79,6 +85,7 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit)
+
 
 
 const scrollBtn = document.getElementById('btn-scroll-inicio')
@@ -105,3 +112,14 @@ scrollBtn.addEventListener('click', function (e) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+
+const checkbox = document.getElementById('mode')
+const trocar = document.getElementsByClassName('mode-trocar')
+
+
+checkbox.addEventListener('change', () => {
+    document.body.classList.toggle('light')
+    for (let i = 0; i < trocar.length; i++) {
+        trocar[i].style.color = 'black'
+    }
+})
