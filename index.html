@@ -17,11 +17,13 @@
 
 <body>
     <header id="topo" class="section">
-        <section class="mode-cr ">
+        <section class="logo">
             <a href="index.html">
                 <img src="src/c-blue.png">
                 <img src="src/r-blue.png">
             </a>
+        </section>
+        <nav>  
             <div>
                 <input type="checkbox" class="checkbox-mode" id="mode">
                 <label class="label-mode" for="mode">
@@ -30,15 +32,16 @@
                     <div class="bola"></div>
                 </label>
             </div>
-        </section>
-
-        <ul id="inicio" class="section">
-            <li><a href="#topo" class="ativo">Inicio</a></li>
-            <li><a href="#sobre" class="mode-trocar">Sobre</a></li>
-            <li><a href="#techs" class="mode-trocar">Tecnologias</a></li>
-            <li><a href="#projetos" class="mode-trocar">Projetos</a></li>
-            <!-- <li><a href="#contato">Contato</a></li> -->
-        </ul>
+            <button id="btn-mobile">Menu</button>
+            <ul id="menu" class="section">
+                <li><a href="#topo" class="ativo">Inicio</a></li>
+                <li><a href="#sobre" class="mode-trocar">Sobre</a></li>
+                <li><a href="#techs" class="mode-trocar">Tecnologias</a></li>
+                <li><a href="#projetos" class="mode-trocar">Projetos</a></li>
+                <!-- <li><a href="#contato">Contato</a></li> -->
+            </ul>
+        </nav>
+        
 
     </header>
 
@@ -81,7 +84,7 @@
 
                 <section class="contatos">
                     <a href="https://www.linkedin.com/in/caioramineli/" target="_blank"><img src="src/linkedin.png" alt="linkedin"></a>
-                    <a href="https://github.com/caioramineli" target="_blank"><img src="src/github.png" alt="GitHub"></a>
+                    <a href="https://github.com/caioramineli" target="_blank"><img src="src/github.png" class="mode-img-git" alt="GitHub"></a>
                     <a href="https://wa.me/5518996661215" target="_blank"><img src="src/whatsapp.png" alt="Whatsapp"></a>
                 </section>
             </section>
@@ -99,8 +102,8 @@
                 JavaScript, PHP e C#. No momento estou estudando .NET, Arquitetura MVC e JavaScript.</p>
         </section>
 
-        <section id="techs" class="container-tecnologias section mode-trocar">
-            <h1>Tecnologias</h1>
+        <section id="techs" class="container-tecnologias section">
+            <h1 class="mode-trocar">Tecnologias</h1>
             <section class="tecnologias">
                 <div class="box">
                     <img src="src/js.png">
@@ -148,7 +151,7 @@
                 </div>
 
                 <div class="box">
-                    <img src="src/github.png">
+                    <img src="src/github.png" class="mode-img-git">
                     <span id="descricao-tech">GitHub</span>
                 </div>
 
@@ -176,7 +179,7 @@
                         Software).</p>
                     <div class="btns-projeto">
                         <a href="#" target="_blank"><button type="button">Projeto <img src="src/olho.png"></button></a>
-                        <a href="#" target="_blank"><button type="button" id="btn-codigo">Código <img src="src/github.png" id="img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button" id="btn-codigo" class="mode-trocar">Código <img src="src/github.png" id="img-git" class="mode-img-git"></button></a>
                     </div>
                 </div>
 
@@ -194,7 +197,7 @@
                         MySql.</p>
                     <div class="btns-projeto">
                         <a href="#" target="_blank"><button type="button">Projeto <img src="src/olho.png"></button></a>
-                        <a href="#" target="_blank"><button type="button" id="btn-codigo">Código <img src="src/github.png" id="img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button" id="btn-codigo" class="mode-trocar">Código <img src="src/github.png" id="img-git" class="mode-img-git"></button></a>
                     </div>
                 </div>
 
@@ -211,7 +214,7 @@
                         clone da shopee!</p>
                     <div class="btns-projeto">
                         <a href="#" target="_blank"><button type="button">Projeto <img src="src/olho.png"></button></a>
-                        <a href="#" target="_blank"><button type="button" id="btn-codigo">Código <img src="src/github.png" id="img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button" id="btn-codigo" class="mode-trocar">Código <img src="src/github.png" id="img-git" class="mode-img-git"></button></a>
                     </div>
                 </div>
             </div>

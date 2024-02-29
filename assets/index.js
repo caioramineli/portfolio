@@ -115,11 +115,38 @@ scrollBtn.addEventListener('click', function (e) {
 
 const checkbox = document.getElementById('mode')
 const trocar = document.getElementsByClassName('mode-trocar')
-
+const rodape = document.getElementsByClassName('container-rodape')
+const imgGit = document.getElementsByClassName('mode-img-git')
+const fundoMode = document.getElementsByClassName('label-mode')
+const bolaMode = document.getElementsByClassName('bola')
+const fsGradient = document.getElementById('fullstack');
 
 checkbox.addEventListener('change', () => {
     document.body.classList.toggle('light')
+    
+
     for (let i = 0; i < trocar.length; i++) {
-        trocar[i].style.color = 'black'
+        if (checkbox.checked) {
+            trocar[i].style.cssText = 'transition: 0.4s; color: black;'
+            rodape[0].style.cssText = 'background: linear-gradient(to bottom, #bbb, #919192);'
+            fundoMode[0].style.cssText = 'transition: 0.2s; background-color: #111;'
+            bolaMode[0].style.cssText = 'transition: 0.2s; background-color: #fff;'
+            fsGradient.style.cssText = 'transition: 0.3s; background: linear-gradient(to right, var(--cor-primaria), #004781); -webkit-background-clip: text; background-clip: text; color: transparent;'
+        }
+        else {
+            trocar[i].style.cssText  = 'transition: 0.4s; color: white;'
+            rodape[0].style.cssText = 'background: linear-gradient(to bottom, #1f1f21, #0d0d0e);'
+            fundoMode[0].style.cssText = 'transition: 0.2s; background-color: #eee;'
+            bolaMode[0].style.cssText = 'transition: 0.2s; background-color: #1f1f21;'
+            fsGradient.style.cssText = 'transition: 0.3s; background: linear-gradient(to right, var(--cor-primaria), #6ebeff); -webkit-background-clip: text; background-clip: text; color: transparent;'
+        }
     }
+    for (let j = 0; j < imgGit.length; j++) {
+        if (checkbox.checked) {
+            imgGit[j].src = 'src/github-black.png'
+        }
+        else {
+            imgGit[j].src = 'src/github.png'
+        }
+    }    
 })

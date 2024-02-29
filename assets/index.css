@@ -12,59 +12,14 @@
     list-style: none;
 }
 
-
 body {
     background-color: #1f1f21;
+    /* background-color: #bbb; */
     transition: background .2s linear;
 }
 
 body.light {
-    background-color: #fff;
-}
-
-.checkbox-mode {
-    opacity: 0;
-    position: absolute;
-}
-
-.label-mode {
-    background-color: #111;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    top: 2px;
-    left: 15px;
-    height: 26px;
-    width: 50px;
-    transform: scale(1.4);
-}
-
-.label-mode .bola {
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
-}
-
-.checkbox-mode:checked + .label-mode .bola {
-    transform: translateX(24px);
-}
-
-.fa-moon {
-    color: #f1c40f;
-}
-
-.fa-sun {
-    color: #f39c12;
+    background-color: #bbb;
 }
 
 header {
@@ -77,23 +32,23 @@ header {
     max-width: 1100px;
 }
 
-header .mode-cr {
+header .logo {
     display: flex;
     align-items: center;
 }
 
-header .mode-cr a {
+header .logo a {
     display: flex;
     width: 80px;
 }
 
-header .mode-cr a img:first-child {
+header .logo a img:first-child {
     width: 60px;
     position: relative;
     left: -10px;
 }
 
-header .mode-cr a img:last-child {
+header .logo a img:last-child {
     width: 56px;
     height: 56px;
     position: relative;
@@ -101,16 +56,76 @@ header .mode-cr a img:last-child {
     top: 3px;
 }
 
-header a span {
-    color: var(--cor-primaria);
-}
-
-header ul {
+header nav {
     display: flex;
     column-gap: 2rem;
 }
 
-header ul li a {
+header nav #btn-mobile {
+    display: none;
+    /* padding: .5rem; */
+}
+
+@media (max-width: 880px) {
+    header nav #btn-mobile {
+        display: block;
+    }
+    header nav #menu {
+        display: none;
+    }
+}
+
+header nav .checkbox-mode {
+    opacity: 0;
+    position: absolute;
+}
+
+header nav .label-mode {
+    background-color: #eee;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    /* top: 25px; */
+    /* right: 100px; */
+    height: 26px;
+    width: 50px;
+    transform: scale(1.4);
+}
+
+header nav .label-mode .bola {
+    background-color: #1f1f21;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+header nav .checkbox-mode:checked + .label-mode .bola {
+    transform: translateX(24px);
+}
+
+header nav .fa-moon {
+    color: #f1c40f;
+}
+
+header nav .fa-sun {
+    color: #ff8800;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 2rem;
+}
+
+header nav ul li a {
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
@@ -121,13 +136,9 @@ header ul li a:hover {
     transition: all ease 0.4s;
 }
 
-header ul li a.ativo {
+header nav ul li a.ativo {
     color: var(--cor-primaria);
 }
-
-header ul li #a-mode.ligth {
-    color: #111;
-} 
 
 main {
     width: 70%;
@@ -165,7 +176,7 @@ main .container-inicio .informacoes p {
 }
 
 main .container-inicio .informacoes p span {
-    color: #3493ec;
+    color: var(--cor-primaria);
     font-weight: 500;
 }
 
@@ -356,6 +367,7 @@ main .tecnologias {
     column-gap: 1.2rem;
     row-gap: 2rem;
     margin-top: 1.2rem;
+    
 }
 
 main .container-tecnologias img {
@@ -477,7 +489,7 @@ main .projeto .btns-projeto button {
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: 0.25s;
+    transition: 0.4s;
 }
 
 main .projeto .btns-projeto button:hover {
@@ -490,7 +502,7 @@ main .projeto .btns-projeto #btn-codigo {
 }
 
 main .projeto .btns-projeto #btn-codigo:hover {
-    box-shadow: 0px 0px 4px 4px var(--cor-primaria);
+    box-shadow: 0px 0px 3px 3px var(--cor-primaria);
 }
 
 main .projeto .btns-projeto img {
