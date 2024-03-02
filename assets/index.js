@@ -1,3 +1,14 @@
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+  }
+  
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
 document.addEventListener('DOMContentLoaded', function () {
     const palavra = '- Full Stack.';
     const elementoTexto = document.getElementById('fullstack');
@@ -101,7 +112,7 @@ window.addEventListener('scroll', function () {
         }
     });
 
-    if (currentSection != 'topo') {
+    if (currentSection != 'header') {
         scrollBtn.classList.add('show-button');
     } else {
         scrollBtn.classList.remove('show-button');
@@ -150,3 +161,5 @@ checkbox.addEventListener('change', () => {
         }
     }    
 })
+
+

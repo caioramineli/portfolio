@@ -26,15 +26,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    /* width: 70%; */
     height: 5rem;
     margin: 0 auto;
-    max-width: 1100px;
+    /* max-width: 1100px; */
+    /* padding: 40px; */
 }
 
 header .logo {
     display: flex;
     align-items: center;
+    margin-left: 2rem;
 }
 
 header .logo a {
@@ -59,19 +61,92 @@ header .logo a img:last-child {
 header nav {
     display: flex;
     column-gap: 2rem;
+    margin-right: 2rem;
 }
 
 header nav #btn-mobile {
     display: none;
-    /* padding: .5rem; */
+    color: #eee;
 }
 
-@media (max-width: 880px) {
-    header nav #btn-mobile {
-        display: block;
-    }
+@media (max-width: 700px) {
     header nav #menu {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        transition: 0s;
+        padding: 5px;
+        gap: 10px;
+        visibility: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        right: 2rem;
+        top: 70px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px); 
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    #nav.active #menu {
+        /* height: calc(100vh - 70px); */
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        /* padding: px; */
+        /* border-bottom: 2px solid rgba(0, 0, 0, 0.05); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1.3rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        font-weight: 500;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+        margin-top: 5px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    header nav .label-mode {
+        top: 8.5px;
     }
 }
 
@@ -89,8 +164,6 @@ header nav .label-mode {
     justify-content: space-between;
     padding: 5px;
     position: relative;
-    /* top: 25px; */
-    /* right: 100px; */
     height: 26px;
     width: 50px;
     transform: scale(1.4);
@@ -108,7 +181,7 @@ header nav .label-mode .bola {
     transition: transform 0.2s linear;
 }
 
-header nav .checkbox-mode:checked + .label-mode .bola {
+header nav .checkbox-mode:checked+.label-mode .bola {
     transform: translateX(24px);
 }
 
@@ -120,7 +193,7 @@ header nav .fa-sun {
     color: #ff8800;
 }
 
-header nav ul {
+header nav #menu {
     display: flex;
     column-gap: 2rem;
 }
@@ -367,7 +440,7 @@ main .tecnologias {
     column-gap: 1.2rem;
     row-gap: 2rem;
     margin-top: 1.2rem;
-    
+
 }
 
 main .container-tecnologias img {

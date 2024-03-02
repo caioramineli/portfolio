@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <header id="topo" class="section">
+    <header id="header" class="section">
         <section class="logo">
             <a href="index.html">
                 <img src="src/c-blue.png">
                 <img src="src/r-blue.png">
             </a>
         </section>
-        <nav>  
+        <nav id="nav">  
             <div>
                 <input type="checkbox" class="checkbox-mode" id="mode">
                 <label class="label-mode" for="mode">
@@ -32,16 +32,16 @@
                     <div class="bola"></div>
                 </label>
             </div>
-            <button id="btn-mobile">Menu</button>
+            <button id="btn-mobile">Menu
+                <span id="hamburger"></span>
+              </button>
             <ul id="menu" class="section">
-                <li><a href="#topo" class="ativo">Inicio</a></li>
+                <li><a href="#header" class="ativo">Inicio</a></li>
                 <li><a href="#sobre" class="mode-trocar">Sobre</a></li>
                 <li><a href="#techs" class="mode-trocar">Tecnologias</a></li>
                 <li><a href="#projetos" class="mode-trocar">Projetos</a></li>
-                <!-- <li><a href="#contato">Contato</a></li> -->
             </ul>
         </nav>
-        
 
     </header>
 
