@@ -1,8 +1,8 @@
 const btnMobile = document.getElementById('btn-mobile');
+const nav = document.getElementById('nav');
 
 function toggleMenu(event) {
     if (event.type === 'touchstart') event.preventDefault();
-    const nav = document.getElementById('nav');
     nav.classList.toggle('active');
 }
   
@@ -50,6 +50,7 @@ var input = document.getElementsByClassName('input')
 function abrirModal() {
     document.getElementById('modal').style.display = 'flex';
     document.body.style.overflow = 'hidden';
+    nav.classList.toggle('active');
     input[0].focus();
 }
 
