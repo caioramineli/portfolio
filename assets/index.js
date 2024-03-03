@@ -49,12 +49,14 @@ var input = document.getElementsByClassName('input')
 
 function abrirModal() {
     document.getElementById('modal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
     input[0].focus();
 }
 
 function fecharModal() {
     document.getElementById('modal').style.display = 'none';
     document.getElementById('span-form').style.display = 'none';
+    document.body.style.overflow = '';
 }
 
 function tirarSpanForm() {

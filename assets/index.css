@@ -70,12 +70,12 @@ header nav #btn-mobile {
 }
 
 .label-mode.light {
-    transition: 0.2s; 
+    transition: 0.2s;
     background-color: #111;
 }
 
 .label-mode .bola.light {
-    transition: 0.2s; 
+    transition: 0.2s;
     background-color: #fff;
 }
 
@@ -92,7 +92,7 @@ header nav #btn-mobile {
         top: 70px;
         width: 180px;
         background-color: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px); 
+        backdrop-filter: blur(10px);
         border-radius: 10px;
         overflow: hidden;
         z-index: 10;
@@ -124,9 +124,9 @@ header nav #btn-mobile {
     }
 
     #hamburger {
-        border-top: 2.1px solid;
+        border-top: 2.2px solid;
         width: 20px;
-        margin-top: 5px;
+        margin-top: 3.6px;
     }
 
     #hamburger::after,
@@ -134,7 +134,7 @@ header nav #btn-mobile {
         content: '';
         display: block;
         width: 20px;
-        height: 2px;
+        height: 2.2px;
         background: currentColor;
         margin-top: 5px;
         transition: 0.3s;
@@ -306,7 +306,7 @@ main .container-inicio .informacoes button:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -641,16 +641,16 @@ footer .container-rodape h2 {
     margin-top: 1rem;
     color: var(--cor-primaria);
     font-weight: 500;
-    width: 80%;
+    width: 85%;
     max-width: 1100px;
     display: flex;
     justify-content: center;
 }
 
 footer .container-rodape h3 {
-    margin-bottom: 3rem;
+    margin-bottom: 3.1rem;
     font-weight: 500;
-    width: 80%;
+    width: 85%;
     max-width: 1100px;
     display: flex;
     justify-content: center;
@@ -676,15 +676,41 @@ footer .container-rodape h3 {
         margin-top: 3rem;
         gap: 10px;
     }
+
     .foto-mobile {
         display: block;
     }
+
     .foto {
         display: none;
     }
-    .container-rodape h2, 
+
+    .container-rodape h2,
     .container-rodape h3 {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
+    }
+
+    .container-modal form {
+        width: 320px;
+    }
+
+    .container-modal #fechar-modal {
+        left: 142px;
+    }
+
+    .container-modal form label,
+    .container-modal form textarea {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .container-modal form input {
+        width: 70%;
+        font-size: 0.94rem;
+    }
+
+    .container-modal .btns-modal button {
+        width: 105px;
     }
 }
 
@@ -692,11 +718,23 @@ footer .container-rodape h3 {
     #fs-gradient {
         font-size: 1.18rem;
     }
+
     main .container-inicio .informacoes h1 {
         font-size: 2rem;
     }
 
     main .container-inicio .informacoes p {
         font-size: 1.05rem;
+    }
+
+    header nav ul li a:hover {
+        color: white;
+        transition: 0s;
+    }
+
+    footer .container-rodape h2,
+    footer .container-rodape h3 {
+        display: inline;
+        /* justify-content: center; */
     }
 }
