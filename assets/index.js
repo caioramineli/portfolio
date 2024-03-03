@@ -50,7 +50,7 @@ var input = document.getElementsByClassName('input')
 function abrirModal() {
     document.getElementById('modal').style.display = 'flex';
     document.body.style.overflow = 'hidden';
-    nav.classList.toggle('active');
+    nav.classList.remove('active');
     input[0].focus();
 }
 
