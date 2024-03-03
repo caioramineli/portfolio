@@ -4,7 +4,7 @@ function toggleMenu(event) {
     if (event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
-  }
+}
   
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
@@ -130,26 +130,23 @@ const rodape = document.getElementsByClassName('container-rodape')
 const imgGit = document.getElementsByClassName('mode-img-git')
 const fundoMode = document.getElementsByClassName('label-mode')
 const bolaMode = document.getElementsByClassName('bola')
-const fsGradient = document.getElementById('fullstack');
+const fsGradient = document.getElementById('fs-gradient');
+const menuCor = document.getElementById('btn-mobile')
 
 checkbox.addEventListener('change', () => {
     document.body.classList.toggle('light')
-    
+    menuCor.classList.toggle('light')
+    fsGradient.classList.toggle('light')
+    rodape[0].classList.toggle('light')
+    fundoMode[0].classList.toggle('light')
+    bolaMode[0].classList.toggle('light')
 
     for (let i = 0; i < trocar.length; i++) {
         if (checkbox.checked) {
-            trocar[i].style.cssText = 'transition: 0.4s; color: black;'
-            rodape[0].style.cssText = 'background: linear-gradient(to bottom, #bbb, #919192);'
-            fundoMode[0].style.cssText = 'transition: 0.2s; background-color: #111;'
-            bolaMode[0].style.cssText = 'transition: 0.2s; background-color: #fff;'
-            fsGradient.style.cssText = 'transition: 0.3s; background: linear-gradient(to right, var(--cor-primaria), #004781); -webkit-background-clip: text; background-clip: text; color: transparent;'
+            trocar[i].style.color = 'black'
         }
         else {
-            trocar[i].style.cssText  = 'transition: 0.4s; color: white;'
-            rodape[0].style.cssText = 'background: linear-gradient(to bottom, #1f1f21, #0d0d0e);'
-            fundoMode[0].style.cssText = 'transition: 0.2s; background-color: #eee;'
-            bolaMode[0].style.cssText = 'transition: 0.2s; background-color: #1f1f21;'
-            fsGradient.style.cssText = 'transition: 0.3s; background: linear-gradient(to right, var(--cor-primaria), #6ebeff); -webkit-background-clip: text; background-clip: text; color: transparent;'
+            trocar[i].style.color = 'white'
         }
     }
     for (let j = 0; j < imgGit.length; j++) {

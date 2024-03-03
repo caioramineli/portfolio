@@ -14,7 +14,6 @@
 
 body {
     background-color: #1f1f21;
-    /* background-color: #bbb; */
     transition: background .2s linear;
 }
 
@@ -26,11 +25,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 70%; */
     height: 5rem;
     margin: 0 auto;
-    /* max-width: 1100px; */
-    /* padding: 40px; */
 }
 
 header .logo {
@@ -69,11 +65,24 @@ header nav #btn-mobile {
     color: #eee;
 }
 
+#btn-mobile.light {
+    color: #0d0d0e;
+}
+
+.label-mode.light {
+    transition: 0.2s; 
+    background-color: #111;
+}
+
+.label-mode .bola.light {
+    transition: 0.2s; 
+    background-color: #fff;
+}
+
 @media (max-width: 700px) {
     header nav #menu {
         display: flex;
         flex-direction: column;
-        transition: 0s;
         padding: 5px;
         gap: 10px;
         visibility: hidden;
@@ -81,23 +90,20 @@ header nav #btn-mobile {
         position: absolute;
         right: 2rem;
         top: 70px;
-        width: 200px;
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px); 
+        width: 180px;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px); 
         border-radius: 10px;
         overflow: hidden;
         z-index: 10;
     }
 
     #nav.active #menu {
-        /* height: calc(100vh - 70px); */
         visibility: visible;
         overflow-y: auto;
     }
 
     #menu a {
-        /* padding: px; */
-        /* border-bottom: 2px solid rgba(0, 0, 0, 0.05); */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -105,17 +111,20 @@ header nav #btn-mobile {
 
     header nav #btn-mobile {
         display: flex;
-        padding: 0.5rem 1rem;
-        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0.1rem;
+        font-size: 1.35rem;
         border: none;
         background: none;
         cursor: pointer;
         gap: 0.5rem;
         font-weight: 500;
+        margin-top: 5px;
     }
 
     #hamburger {
-        border-top: 2px solid;
+        border-top: 2.1px solid;
         width: 20px;
         margin-top: 5px;
     }
@@ -146,7 +155,8 @@ header nav #btn-mobile {
     }
 
     header nav .label-mode {
-        top: 8.5px;
+        top: 13px;
+        right: 5px;
     }
 }
 
@@ -204,7 +214,7 @@ header nav ul li a {
     font-weight: 600;
 }
 
-header ul li a:hover {
+header nav ul li a:hover {
     color: var(--cor-primaria);
     transition: all ease 0.4s;
 }
@@ -214,7 +224,7 @@ header nav ul li a.ativo {
 }
 
 main {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     max-width: 1100px;
 }
@@ -240,6 +250,13 @@ main .container-inicio .informacoes h3 {
     background-clip: text;
     color: transparent;
     font-size: 2rem;
+}
+
+#fs-gradient.light {
+    background: linear-gradient(to right, var(--cor-primaria), #004781);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 main .container-inicio .informacoes p {
@@ -438,7 +455,7 @@ main .tecnologias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     column-gap: 1.2rem;
-    row-gap: 2rem;
+    row-gap: 2.2rem;
     margin-top: 1.2rem;
 
 }
@@ -536,11 +553,6 @@ main .projeto h3 {
 
 main .projeto p {
     margin-top: 10px;
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; */
 }
 
 main .projeto .btns-projeto {
@@ -610,22 +622,81 @@ main .inicio img {
 
 footer .container-rodape {
     width: 100%;
-    height: 8rem;
     background: linear-gradient(to bottom, #1f1f21, #0d0d0e);
     color: white;
-    margin-top: 8vh;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-rodape.light {
+    background: linear-gradient(to bottom, #bbb, #919192);
 }
 
 footer .container-rodape h2 {
     margin-top: 1rem;
     color: var(--cor-primaria);
     font-weight: 500;
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
 }
 
 footer .container-rodape h3 {
-    margin-top: 1rem;
+    margin-bottom: 3rem;
     font-weight: 500;
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.foto-mobile {
+    display: none;
+}
+
+.foto-mobile img {
+    width: 18rem;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 850px) {
+    main .container-inicio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 3rem;
+        gap: 10px;
+    }
+    .foto-mobile {
+        display: block;
+    }
+    .foto {
+        display: none;
+    }
+    .container-rodape h2, 
+    .container-rodape h3 {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 450px) {
+    #fs-gradient {
+        font-size: 1.18rem;
+    }
+    main .container-inicio .informacoes h1 {
+        font-size: 2rem;
+    }
+
+    main .container-inicio .informacoes p {
+        font-size: 1.05rem;
+    }
 }
