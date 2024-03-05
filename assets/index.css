@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     height: 5rem;
     margin: 0 auto;
+    min-width: 330px;
 }
 
 header .logo {
@@ -77,87 +78,6 @@ header nav #btn-mobile {
 .label-mode .bola.light {
     transition: 0.2s;
     background-color: #fff;
-}
-
-@media (max-width: 700px) {
-    header nav #menu {
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        gap: 10px;
-        visibility: hidden;
-        overflow-y: hidden;
-        position: absolute;
-        right: 2rem;
-        top: 70px;
-        width: 180px;
-        background-color: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        overflow: hidden;
-        z-index: 10;
-    }
-
-    #nav.active #menu {
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    #menu a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    header nav #btn-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5rem 0.1rem;
-        font-size: 1.35rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: 0.5rem;
-        font-weight: 500;
-        margin-top: 5px;
-    }
-
-    #hamburger {
-        border-top: 2.2px solid;
-        width: 20px;
-        margin-top: 3.6px;
-    }
-
-    #hamburger::after,
-    #hamburger::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2.2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: 0.3s;
-        position: relative;
-    }
-
-    #nav.active #hamburger {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-
-    header nav .label-mode {
-        top: 13px;
-        right: 5px;
-    }
 }
 
 header nav .checkbox-mode {
@@ -514,7 +434,6 @@ main .container-projetos {
 
 main .projeto {
     filter: brightness(0.92);
-    /* background-color: #2ecc71; */
     overflow: hidden;
 }
 
@@ -666,6 +585,86 @@ footer .container-rodape h3 {
     border-radius: 50%;
 }
 
+@media (max-width: 700px) {
+    header nav #menu {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        gap: 10px;
+        visibility: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        right: 2rem;
+        top: 70px;
+        width: 180px;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav #btn-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0.1rem;
+        font-size: 1.35rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    #hamburger {
+        border-top: 2.2px solid;
+        width: 20px;
+        margin-top: 3.6px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2.2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    header nav .label-mode {
+        top: 13px;
+        right: 5px;
+    }
+}
 
 @media (max-width: 850px) {
     main .container-inicio {
@@ -692,7 +691,7 @@ footer .container-rodape h3 {
 
     .container-modal form {
         width: 320px;
-        height: 390px;
+        height: 400px;
     }
 
     .container-modal #fechar-modal {
@@ -736,6 +735,5 @@ footer .container-rodape h3 {
     footer .container-rodape h2,
     footer .container-rodape h3 {
         display: inline;
-        /* justify-content: center; */
     }
 }

@@ -90,12 +90,12 @@ async function handleSubmit(event) {
                 if (Object.hasOwn(data, 'errors')) {
                     status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                 } else {
-                    status.innerHTML = "Houve um problema ao enviar o email. Porfavor tente novamente!"
+                    status.innerHTML = "Houve um problema ao enviar o email!"
                 }
             })
         }
     }).catch(error => {
-        status.innerHTML = "Houve um problema ao enviar o email. Porfavor tente novamente!"
+        status.innerHTML = "Houve um problema ao enviar o email!"
     });
 }
 form.addEventListener("submit", handleSubmit)
