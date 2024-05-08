@@ -427,19 +427,19 @@ main .sessao-projetos h1 {
 
 main .container-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2.5rem;
     margin-top: 1.5rem;
 }
 
-main .projeto {
-    filter: brightness(0.92);
-    overflow: hidden;
+main .container-projetos:hover .projeto:not(:hover) {
+    filter: brightness(.7);
+    scale: 0.95;
 }
 
-main .projeto:hover {
+main .projeto {
+    overflow: hidden;
     transition: 0.4s;
-    filter: brightness(1);
 }
 
 main .projeto #img-projeto {
