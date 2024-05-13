@@ -448,10 +448,6 @@ main .projeto #img-projeto {
     transition: 0.3s transform ease-in-out;
 }
 
-main .projeto:hover>#img-projeto {
-    transform: scale(1.025);
-}
-
 main .projeto .tecnologias-projeto {
     display: flex;
     align-items: center;
