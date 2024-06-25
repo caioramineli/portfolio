@@ -154,10 +154,10 @@ checkbox.addEventListener('change', () => {
     }
     for (let j = 0; j < imgGit.length; j++) {
         if (checkbox.checked) {
-            imgGit[j].src = 'src/github-black.png'
+            imgGit[j].src = 'assets/github-black.png'
         }
         else {
-            imgGit[j].src = 'src/github.png'
+            imgGit[j].src = 'assets/github.png'
         }
     }    
 })
