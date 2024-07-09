@@ -382,6 +382,8 @@ main .tecnologias {
 
 main .container-tecnologias img {
     width: 80px;
+    position: relative;
+    z-index: -1;
 }
 
 main .tecnologias .box {
@@ -401,6 +403,7 @@ main .tecnologias #descricao-tech {
     padding: 4px 5px;
     width: 95px;
     text-align: center;
+    z-index: 1;
 }
 
 main .tecnologias .box:hover #descricao-tech {
@@ -445,6 +448,7 @@ main .projeto {
 main .projeto #img-projeto {
     border-radius: 5px;
     width: 100%;
+    aspect-ratio: 16/10;
     transition: 0.3s transform ease-in-out;
 }
 

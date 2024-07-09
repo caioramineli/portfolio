@@ -9,7 +9,8 @@
     <link rel="icon" href="assets/favicon-cr.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     <script src="src/index.js" defer></script>
     <title>Caio Ramineli | Portfólio</title>
@@ -24,7 +25,7 @@
                 <img src="assets/r-blue.png">
             </a>
         </section>
-        <nav id="nav">  
+        <nav id="nav">
             <div>
                 <input type="checkbox" class="checkbox-mode" id="mode">
                 <label class="label-mode" for="mode">
@@ -35,7 +36,7 @@
             </div>
             <button id="btn-mobile">Menu
                 <span id="hamburger"></span>
-              </button>
+            </button>
             <ul id="menu" class="section">
                 <li><a href="#header" class="ativo">Inicio</a></li>
                 <li><a href="#sobre" class="mode-trocar">Sobre</a></li>
@@ -54,8 +55,10 @@
             <section class="informacoes">
                 <h1 class="mode-trocar">Caio Ramineli</h1>
                 <h3 id="fs-gradient">Desenvolvedor Web <span id="fullstack"></span> </h3>
-                <p class="mode-trocar">Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo, atualmente estou estudando
-                    <span>ReactJS</span> e <span>Node.js.</span></p>
+                <p class="mode-trocar">Eu curso Análise e Desenvolvimento de Sistemas e estou no 5º módulo, atualmente
+                    estou estudando
+                    <span>ReactJS</span> e <span>Node.js.</span>
+                </p>
                 <section class="btns">
                     <a href="./CV.pdf" target="_blank" download="Curriculo_CaioRamineli"><button type="button"
                             id="btn-download">Baixar CV</button></a>
@@ -87,9 +90,12 @@
                 </section>
 
                 <section class="contatos">
-                    <a href="https://www.linkedin.com/in/caioramineli/" target="_blank"><img src="assets/linkedin.png" alt="linkedin"></a>
-                    <a href="https://github.com/caioramineli" target="_blank"><img src="assets/github.png" class="mode-img-git" alt="GitHub"></a>
-                    <a href="https://wa.me/5518996661215" target="_blank"><img src="assets/whatsapp.png" alt="Whatsapp"></a>
+                    <a href="https://www.linkedin.com/in/caioramineli/" target="_blank"><img src="assets/linkedin.png"
+                            alt="linkedin"></a>
+                    <a href="https://github.com/caioramineli" target="_blank"><img src="assets/github.png"
+                            class="mode-img-git" alt="GitHub"></a>
+                    <a href="https://wa.me/5518996661215" target="_blank"><img src="assets/whatsapp.png"
+                            alt="Whatsapp"></a>
                 </section>
             </section>
             <section class="foto">
@@ -100,7 +106,8 @@
         <section id="sobre" class="container-sobre section mode-trocar">
             <h1>Sobre Mim</h1>
             <p>Meu nome é Caio Ramineli, tenho 23 anos e sou de Anhumas-SP. Comecei a estudar programação em 2022 quando
-                entrei na FATEC de Presidente Prudente, para cursar Análise e Desenvolvimento de Sistemas. E partir disso
+                entrei na FATEC de Presidente Prudente, para cursar Análise e Desenvolvimento de Sistemas. E partir
+                disso
                 venho sempre buscando aprender sobre novas tecnologias e me atualizar no mercado de trabalho. Atualmente
                 estou focado na área de Desenvolvimento Web Full Stack, tenho mais experiência com HTML, CSS,
                 JavaScript, PHP e MySQL. No momento estou estudando ReactJS e Node.js</p>
@@ -138,10 +145,20 @@
                     <img src="assets/react.png">
                     <span id="descricao-tech">ReactJS</span>
                 </div>
-            
+
                 <div class="box">
                     <img src="assets/node.png">
                     <span id="descricao-tech">Node.js</span>
+                </div>
+
+                <div class="box">
+                    <img src="assets/typescript.png">
+                    <span id="descricao-tech">TypeScript</span>
+                </div>
+
+                <div class="box">
+                    <img src="assets/tailwind.png">
+                    <span id="descricao-tech">Tailwind CSS</span>
                 </div>
 
                 <div class="box">
@@ -185,6 +202,34 @@
             <h1>Projetos</h1>
             <div class="container-projetos">
                 <div class="projeto">
+                    <img src="assets/planner.png" id="img-projeto">
+                    <div class="tecnologias-projeto">
+                        <img src="assets/react.png">
+                        <img src="assets/typescript.png">
+                        <img src="assets/tailwind.png">
+                    </div>
+                    <h3>Planejador de Viagem</h3>
+                    <p>
+                        O projeto é um site responsivo para montar um roteiro de viagem, cadastrando atividades.
+                        O projeto é do evento NLW Journey, é um evento da Rocketseat.
+                    </p>
+                    <div class="btns-projeto">
+                        <a href="https://planner-nlw.vercel.app/" target="_blank">
+                            <button type="button">
+                                Projeto
+                                <img src="assets/olho.png">
+                            </button>
+                        </a>
+                        <a href="https://github.com/caioramineli/planner.er" target="_blank">
+                            <button type="button" id="btn-codigo" class="mode-trocar">
+                                Código
+                                <img src="assets/github.png" id="img-git" class="mode-img-git">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projeto">
                     <img src="assets/sca-login.png" id="img-projeto">
                     <div class="tecnologias-projeto">
                         <img src="assets/php.png">
@@ -198,8 +243,11 @@
                     <p>Sistema para uma conveniência, seguindo como base a ERS (Especificação de Requisitos de
                         Software).</p>
                     <div class="btns-projeto">
-                        <a href="#" target="_blank"><button type="button">Projeto <img src="assets/olho.png"></button></a>
-                        <a href="https://github.com/caioramineli/sistema-SCA" target="_blank"><button type="button" id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git" class="mode-img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button">Projeto <img
+                                    src="assets/olho.png"></button></a>
+                        <a href="https://github.com/caioramineli/sistema-SCA" target="_blank"><button type="button"
+                                id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git"
+                                    class="mode-img-git"></button></a>
                     </div>
                 </div>
 
@@ -214,10 +262,14 @@
                         <img src="assets/css-3.png">
                     </div>
                     <h3>CRUD de Fornecedores</h3>
-                    <p>Projeto acadêmico de um CRUD de Fornecedores, que utiliza arquitetura MVC e Programação Orientada a Objetos.</p>
+                    <p>Projeto acadêmico de um CRUD de Fornecedores, que utiliza arquitetura MVC e Programação Orientada
+                        a Objetos.</p>
                     <div class="btns-projeto">
-                        <a href="#" target="_blank"><button type="button">Projeto <img src="assets/olho.png"></button></a>
-                        <a href="https://github.com/caioramineli/crud-mvc-poo" target="_blank"><button type="button" id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git" class="mode-img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button">Projeto <img
+                                    src="assets/olho.png"></button></a>
+                        <a href="https://github.com/caioramineli/crud-mvc-poo" target="_blank"><button type="button"
+                                id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git"
+                                    class="mode-img-git"></button></a>
                     </div>
                 </div>
 
@@ -234,8 +286,11 @@
                     <p>Projeto acadêmico para praticar o conhecimento adquirido sobre Programação WEB e Banco de dados
                         MySql.</p>
                     <div class="btns-projeto">
-                        <a href="#" target="_blank"><button type="button">Projeto <img src="assets/olho.png"></button></a>
-                        <a href="https://github.com/caioramineli/twitch-clone" target="_blank"><button type="button" id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git" class="mode-img-git"></button></a>
+                        <a href="#" target="_blank"><button type="button">Projeto <img
+                                    src="assets/olho.png"></button></a>
+                        <a href="https://github.com/caioramineli/twitch-clone" target="_blank"><button type="button"
+                                id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git"
+                                    class="mode-img-git"></button></a>
                     </div>
                 </div>
 
@@ -251,9 +306,11 @@
                     <p>Projeto acadêmico, focado em utilizar os conceitos absorvidos sobre programação Web. Não é um
                         clone da shopee!</p>
                     <div class="btns-projeto">
-                        <a href="https://caioramineli.github.io/shopee-eletiva/" target="_blank"><button type="button">Projeto <img src="assets/olho.png"></button></a>
+                        <a href="https://caioramineli.github.io/shopee-eletiva/" target="_blank"><button
+                                type="button">Projeto <img src="assets/olho.png"></button></a>
                         <a href="https://github.com/caioramineli/shopee-eletiva" target="_blank">
-                            <button type="button" id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git" class="mode-img-git"></button>
+                            <button type="button" id="btn-codigo" class="mode-trocar">Código <img
+                                    src="assets/github.png" id="img-git" class="mode-img-git"></button>
                         </a>
                     </div>
                 </div>
@@ -268,9 +325,12 @@
                     <h3>Calculadora</h3>
                     <p>Projeto acadêmico que utiliza JavaScript puro e um pouco de CSS para construir a calculadora!</p>
                     <div class="btns-projeto">
-                        <a href="https://caioramineli.github.io/lab-eng-software/Semana-6/ex1.html" target="_blank"><button type="button">Projeto <img src="assets/olho.png"></button></a>
-                        <a href="https://github.com/caioramineli/lab-eng-software/blob/main/Semana-6/ex1.html" target="_blank">
-                            <button type="button" id="btn-codigo" class="mode-trocar">Código <img src="assets/github.png" id="img-git" class="mode-img-git"></button>
+                        <a href="https://caioramineli.github.io/lab-eng-software/Semana-6/ex1.html"
+                            target="_blank"><button type="button">Projeto <img src="assets/olho.png"></button></a>
+                        <a href="https://github.com/caioramineli/lab-eng-software/blob/main/Semana-6/ex1.html"
+                            target="_blank">
+                            <button type="button" id="btn-codigo" class="mode-trocar">Código <img
+                                    src="assets/github.png" id="img-git" class="mode-img-git"></button>
                         </a>
                     </div>
                 </div>
