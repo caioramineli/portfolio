@@ -135,7 +135,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--cor-primaria);
+    color: var(--cor-primaria) !important;
     transition: all ease 0.4s;
 }
 
@@ -400,8 +400,8 @@ main .tecnologias #descricao-tech {
     background: #fff;
     font-size: 14px;
     font-weight: bold;
-    padding: 4px 5px;
-    width: 95px;
+    padding: 5px;
+    min-width: 90px;
     text-align: center;
     z-index: 1;
 }
